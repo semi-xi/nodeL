@@ -1,0 +1,25 @@
+{
+  "name": "learnPlan",
+  "version": "1.0.0",
+  "description": "node learning",
+  "main": "file_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semi-xi/nodeL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semi-xi/nodeL/issues"
+  },
+  "homepage": "https://github.com/semi-xi/nodeL#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "nunjucks": "^3.2.0"
+  }
+}

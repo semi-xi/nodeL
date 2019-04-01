@@ -4,6 +4,7 @@ let fs = require('fs');
 let url = require('url');
 let path = require('path');
 let http = require('http');
+// let express = require('express');
 
 let root = path.resolve(process.argv[2] || '.'); // 命令行参数
 
@@ -12,10 +13,10 @@ console.log(`root path ${ root }`);
 //   console.log(files)
 // })
 let server = http.createServer( function (request, response) { 
+  
   let pathname = url.parse(request.url).pathname;
-
   let filepath = path.join(root, pathname);
-
+  console.log(url.parse(request.url))
   fs.stat( filepath, function (err, stats) { 
     if(!err && stats.isFile()) {
       console.log(`200 ${ request.url }`);
